@@ -37,7 +37,7 @@ tconv -c -v -- 123 200 -99
 read standard input 
 
 ```bash
-tconv -f <(cut -d2 -f, temperature_data.csv)
+tconv -f <(cut -d, -f2 temperature_data.csv)
 ```
 ```bash
 seq 100 200 | tconv
